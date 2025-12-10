@@ -9,3 +9,4 @@ timezone: "Beijing Right Now"
 # Navigation links (you can tweak later)
 header_pages:
   - index.md
+  - about.md
