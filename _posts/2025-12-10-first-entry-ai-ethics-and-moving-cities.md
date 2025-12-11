@@ -3,7 +3,7 @@ layout: post
 title: "Why AI Ethics Feels Different When You’re Moving Between Cities"
 date: 2025-12-10
 categories: [AI Ethics, Travel, Art]
-tags: [surveillance, cities, feelings, fieldnotes]
+tags: [AI Ethics, Travel, Art]
 ---
 
 > “Technology is never just about efficiency; it is always also about a way of life.”  
@@ -34,4 +34,13 @@ How does this moment complicate “privacy,” “consent,” or “community”
 - Author Name, *Paper Title*, Journal (Year).  
 - Another scholar, “Article Title,” Publication, Year.  
 
-(Here you can list proper citations in any style you like — even just as links.)
+---
+
+---
+
+{% if page.tags %}
+**Tags:**  
+{% for tag in page.tags %}
+[#{{ tag }}]({{ '/topics/#' | append: tag | slugify | relative_url }}){% unless forloop.last %}, {% endunless %}
+{% endfor %}
+{% endif %}
