@@ -107,3 +107,38 @@ img {
     padding-right: 1rem;
   }
 }
+
+
+/* === HEADER NAV FIX (make tabs visible on dark background) === */
+.site-nav {
+  display: block;
+}
+
+.site-nav .page-link {
+  color: #e7e2da !important;          /* warm light text */
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.2px;
+  padding: 0.35rem 0.6rem;
+  border-radius: 999px;
+  border: 1px solid #1d1d1d;
+  background: transparent;
+  text-decoration: none !important;
+  margin-left: 0.35rem;
+}
+
+.site-nav .page-link:hover {
+  border-color: rgba(139, 169, 107, 0.55);   /* olive */
+  background: rgba(139, 169, 107, 0.10);
+}
+
+/* Mobile menu icon (hamburger) visibility */
+.site-nav .menu-icon svg path {
+  fill: #e7e2da;
+}
+
+/* Optional: tighten header spacing a bit */
+.site-header {
+  padding-top: 0.6rem;
+  padding-bottom: 0.6rem;
+}
