@@ -2,11 +2,12 @@ title: "Fragments on AI, Ethics & Elsewhere"
 description: "A grad student's notebook on AI ethics, art, and travel."
 theme: minima
 
-# Optional nice things:
 author: "Ace Asim"
-timezone: "Beijing Right Now"
+timezone: "Asia/Shanghai"   # ✅ real timezone
 
-# Navigation links (you can tweak later)
+url: "https://github.com/aceasim03"   
+baseurl: "/blog"                     
+
 header_pages:
   - index.md
   - about.md
