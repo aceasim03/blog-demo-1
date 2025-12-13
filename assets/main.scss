@@ -3,16 +3,16 @@
 
 @import "minima";
 
-/* Import fonts */
-@import url("https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@400;600&family=Inter:wght@500;600&display=swap");
+/* Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Literata:wght@400;500;600&family=Inter:wght@500;600&display=swap");
 
-/* GLOBAL DARK EARTH-TONE THEME */
+/* GLOBAL */
 body {
-  background-color: #0b0b0b; 
-  color: #e7e2da; 
-  font-family: "Source Serif Pro", Georgia, serif;
-  line-height: 1.7;
-  font-size: 1.1rem;
+  background-color: #f6f5f2; /* warm paper */
+  color: #1f2933;           /* soft charcoal */
+  font-family: "Literata", Georgia, serif;
+  line-height: 1.75;
+  font-size: 1.05rem;
   margin: 0;
   padding: 0;
 }
@@ -20,60 +20,76 @@ body {
 /* HEADINGS */
 h1, h2, h3, h4, h5, h6,
 .site-title, .post-title {
-  font-family: "Inter", sans-serif;
-  color: #f4f1ec;
+  font-family: "Inter", system-ui, sans-serif;
+  color: #111827;
   font-weight: 600;
-  letter-spacing: 0.3px;
+  letter-spacing: 0.01em;
 }
 
-/* LINKS = Olive green */
+/* LINKS */
 a {
-  color: #8ba96b;
-  text-decoration: none;
+  color: #475569; /* slate blue */
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 2px;
 }
 
 a:hover {
-  text-decoration: underline;
-  color: #a9c988;
+  color: #334155;
 }
 
 /* CONTENT WIDTH */
 .wrapper {
-  max-width: 760px;
-  padding-left: 1.3rem;
-  padding-right: 1.3rem;
+  max-width: 720px;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
 }
 
-/* PARAGRAPH SPACING */
+/* PARAGRAPHS */
 .post-content p {
-  margin-bottom: 1.05rem;
+  margin-bottom: 1.1rem;
 }
 
-/* BLOCKQUOTES — coffee accent */
+/* BLOCKQUOTES */
 blockquote {
-  border-left: 3px solid #7a5a3a;
+  border-left: 3px solid #cbd5e1;
   padding-left: 1rem;
   margin-left: 0;
-  color: #d8d2c9;
+  color: #475569;
   font-style: italic;
-  background: rgba(123, 90, 58, 0.15);
-  border-radius: 4px;
+  background: transparent;
 }
 
-/* NAVBAR */
+/* HEADER */
 .site-header {
-  border-bottom: 1px solid #1d1d1d;
-  background-color: #0b0b0b;
+  border-bottom: 1px solid #e5e7eb;
+  background-color: #f6f5f2;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
 }
 
 .site-title a {
-  color: #f4f1ec !important;
+  color: #111827 !important;
+  text-decoration: none;
+}
+
+/* NAV TABS */
+.site-nav .page-link {
+  color: #475569 !important;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  margin-left: 0.5rem;
+  text-decoration: none !important;
+}
+
+.site-nav .page-link:hover {
+  text-decoration: underline;
 }
 
 /* FOOTER */
 .site-footer {
-  border-top: 1px solid #1d1d1d;
-  color: #9a948b;
+  border-top: 1px solid #e5e7eb;
+  color: #64748b;
   font-size: 0.85rem;
   padding-top: 1rem;
 }
@@ -83,21 +99,30 @@ ul, ol {
   margin-left: 1.3rem;
 }
 
-/* CODE BLOCK */
+/* INLINE CODE */
 code {
-  background: #1d1d1d;
-  color: #e9e3db;
-  padding: 0.2em 0.35em;
-  border-radius: 4px;
-  font-size: 0.93rem;
+  background: #e5e7eb;
+  padding: 0.15em 0.3em;
+  border-radius: 3px;
+  font-size: 0.9rem;
 }
 
-/* IMAGES */
-img {
-  max-width: 100%;
-  border-radius: 6px;
-  margin: 1rem 0;
-  box-shadow: 0 0 18px rgba(0, 0, 0, 0.5);
+/* HOME MENU (optional) */
+.home-menu {
+  margin: 1rem 0 1.25rem 0;
+  display: flex;
+  gap: 0.75rem;
+}
+
+.home-chip {
+  font-family: "Inter", sans-serif;
+  font-size: 0.9rem;
+  color: #475569;
+  text-decoration: none;
+}
+
+.home-chip:hover {
+  text-decoration: underline;
 }
 
 /* MOBILE */
@@ -106,39 +131,4 @@ img {
     padding-left: 1rem;
     padding-right: 1rem;
   }
-}
-
-
-/* === HEADER NAV FIX (make tabs visible on dark background) === */
-.site-nav {
-  display: block;
-}
-
-.site-nav .page-link {
-  color: #e7e2da !important;          /* warm light text */
-  font-family: "Inter", sans-serif;
-  font-weight: 600;
-  letter-spacing: 0.2px;
-  padding: 0.35rem 0.6rem;
-  border-radius: 999px;
-  border: 1px solid #1d1d1d;
-  background: transparent;
-  text-decoration: none !important;
-  margin-left: 0.35rem;
-}
-
-.site-nav .page-link:hover {
-  border-color: rgba(139, 169, 107, 0.55);   /* olive */
-  background: rgba(139, 169, 107, 0.10);
-}
-
-/* Mobile menu icon (hamburger) visibility */
-.site-nav .menu-icon svg path {
-  fill: #e7e2da;
-}
-
-/* Optional: tighten header spacing a bit */
-.site-header {
-  padding-top: 0.6rem;
-  padding-bottom: 0.6rem;
 }
