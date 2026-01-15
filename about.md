@@ -4,9 +4,7 @@ title: About
 permalink: /about/
 ---
 
-# About Me
-
-Hi — I’m [Ace Asim].  
+Hi — I’m Ace Asim.  
 I’m a graduate student working at the intersection of **AI ethics, culture, and the lived experiences that shape how we understand technology**.
 
 I think about technology not only as a system of algorithms and infrastructures, but also as something deeply human:
@@ -23,7 +21,7 @@ This blog is where all of those threads meet.
 
 ---
 
-## 🌍 What This Blog Is
+## What This Blog Is
 
 This is a space for:
 
