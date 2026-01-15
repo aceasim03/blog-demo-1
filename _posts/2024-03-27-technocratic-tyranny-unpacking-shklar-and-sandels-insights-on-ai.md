@@ -1,0 +1,49 @@
+---
+layout: post
+title: "TECHNOCRATIC TYRANNY: UNPACKING SHKLAR AND SANDEL'S INSIGHTS ON AI"
+date: 2024-03-27
+tags: [AI Ethics, Philosophy]
+---
+
+In an era dominated by technological advancements and the propagation of Artificial Intelligence (AI), questions regarding state power, the common good, and the ethical implications of technocracy have become, and will continue to be, increasingly pertinent. Using the insights of Michael Sandel and Judith Shklar and from their works, The Tyranny of Merit: What’s Become of the Common Good? and Liberalism and the Moral Life respectively, to inform our understanding of AI, meritocracy, and its implications for society, we can hopefully understand the potential dangers of unchecked, prevailing technocratic governance and its impact on the pursuit of an equitable and safe society.
+
+Artificial Intelligence stands as an ever-evolving entity that is capable of processing defined inputs to yield predetermined outputs. Its adaptability allows it to grapple with increasingly intricate challenges. However, the advent of AI presents a conundrum that directly challenges the insights of both Sandel and Shklar. As those in positions of power drive the development of AI, they embed within it the meritocratic values that Sandel critiques. This integration perpetuates societal divisions that Sandel fears and exacerbates fears of surveillance and technology’s omnipresence, potentially leading to episodes of cruelty. Consequently, Sandel and Shklar would undoubtedly express apprehension towards AI adoption, foreseeing its potential to rapidly transform societies into less peaceful, more apprehensive, and fundamentally inequitable entities.
+
+Sandel’s critique of meritocracy challenges the notion that success is solely attributable to individual effort and how deserving someone is. He argues against the meritocratic ideal equating success with personal merit, emphasizing the role of luck and systemic factors in shaping outcomes. He contends that the common narrative of “If my success is my own doing, their failure must be their fault…”​ overlooks the influence of luck and systemic advantages (2020). Sandel suggests that this narrative fosters a demoralizing narrative that blames those who lost for their failures and exalts success as a moral virtue. This rhetoric perpetuates divisions and inequalities, birthing hubris in winners and humiliation in losers.
+
+In the realm of AI governance, Sandel’s critique acquires a heightened significance. The development and deployment of AI technologies will reinforce existing inequalities, as they are driven by the interests and biases of those in power. Sandel warns against the perpetuation of societal divisions by AI, arguing that meritocratic ideals risk entrenching societal divisions (2020). AI systems, infused with such ideals, will privilege certain groups while marginalizing others. Sandel believes that today's meritocracy has evolved into a 'hereditary aristocracy,' with a significant portion of students at elite institutions like Harvard and Stanford coming from the top income bracket. This situation underscores the problematic nature of meritocracy, where opportunities for success are unevenly distributed, often reinforcing existing inequalities. This shift, he suggests, mirrors broader societal trends and contributes to the deepening of meritocratic values​​. There is a myth of technology as the great equalizer, and it becomes obsolete when AI, in efforts to be more human-like, continuously perpetuates a repeat of human history, further widening the gap between the haves and have-nots.
+
+In contemporary society, AI is increasingly intertwined with systems of governance, economics, and social organization. However, delving deeper into the origins of AI development unveils a stark reality – it is primarily crafted by individuals who have ascended to the top echelons of society through the mechanisms of meritocracy. Sandel's critique of meritocracy sheds light on the underlying motivations behind AI development, revealing how entrenched power structures perpetuate societal inequalities. There is potential for pride to take over, as “…the more we view ourselves as self-made and self-sufficient, the less likely we are to care for the fate of those less fortunate than ourselves,” which can result in the gap widening (2020).
+
+Sandel elucidates how the narrative of meritocracy reinforces the belief that success is solely a product of individual effort and talent, overlooking the role of luck and systemic advantages. Those who have achieved prominence within the meritocratic system often harbor disdain towards those perceived as less deserving, fostering a class antagonism that permeates society. In the context of AI development, this antagonism manifests as a desire among the elite to safeguard their positions of privilege by consolidating power and replacing lower-class jobs with AI-driven automation. Sandel’s critique of meritocracy sheds light on the underlying motivations behind these actions, revealing how entrenched power structures perpetuate social inequalities.
+
+This desire for control and dominance is a direct affront to Judith Shklar's “Liberalism of Fear,” which prioritizes the prevention of cruelty and the dispersion of power as foundational principles of political governance. Shklar's emphasis on negative liberties underscores the importance of safeguarding individual freedoms against encroachments by both state and non-state actors. However, the rise of AI-driven technocracy poses a grave threat to these liberties, as pervasive surveillance and control mechanisms infringe upon the privacy and autonomy of citizens. As Shklar aptly notes, “…cruelty and fear [are] the basic norm of its political practices and prescriptions,” highlighting the potential for AI governance to devolve into authoritarianism (1989).
+
+Shklar posits that the mitigation of cruelty and the prevention of the concentration of power on top what should be the primary objectives of political governance. She contends that the deliberate infliction of infliction of physical and emotional pain by those in power upon weaker individuals, cruelty, constitutes the gravest threat to individual liberties. Furthermore, Shklar warns against the dangers of centralized power at the top, advocating for a political and legal framework that safeguards against governmental tyranny.
+
+In the context of AI development, Shklar’s concerns resonate profoundly. AI technologies are often developed by those already entrenched in positions of privilege; as a result, such technology has the potential to exacerbate existing power differentials. The concentration of AI power in the hands of a select few promises the erosion of individual liberties, as surveillance and control mechanisms can become more pervasive. Shklar’s emphasis on negative liberties underscores the importance of vigilance against the encroachment of AI-driven technocracy, which is most likely to prioritize efficiency and the market over ethical considerations.
+
+Synthesizing Shklar and Sandel’s insights, we are presented with a challenge to reconcile the technocratic vision of AI governance with the principles of the common good. Shklar’s emphasis on preventing cruelty and limiting the concentration of power underscores the imperative of incorporating ethical considerations in AI developments and deployment. As Shklar warns, “Where the instruments of coercion are at hand... [there's a risk of] tyranny,” stressing the need for a political and legal framework that safeguards against governmental overreach in AI governance (1989).
+
+Sandel’s critique of meritocracy reminds us of the importance of recognizing luck and societal factors in shaping outcomes, urging us to reevaluate the narratives that underpin our technological pursuits.
+
+Moreover, the concentration of AI power in the hands of a select few exacerbates existing societal divisions, further entrenching disparities between the privileged and the marginalized. The myth of technology as a great equalizer crumbles in the face of AI's reinforcement of meritocratic ideals, perpetuating a cycle of inequality and exclusion. As AI becomes increasingly human-like, it risks replicating historical patterns of oppression and discrimination, perpetuating a cycle of fear and surveillance reminiscent of dystopian nightmares.
+
+When confronting the challenges posed by AI governance, it is imperative to reconcile the tension between individual good and the common good. Shklar's call for the mitigation of fear and harm underscores the importance of prioritizing the well-being of all citizens over the narrow interests of the elite. Sandel's critique of meritocracy serves as a cautionary tale, reminding us of the dangers of perpetuating systems that prioritize individual success over collective welfare.
+
+In conclusion, the insights of Shklar and Sandel provide a framework for reimagining AI governance in pursuit of a more just and equitable society. By integrating their critiques into the discourse surrounding AI development, we can challenge the prevailing narratives of meritocracy and technocracy, striving to create a future where the common good takes precedence over narrow self-interest. Only through a concerted effort to address the ethical implications of AI can we hope to realize a vision of a society where fear is mitigated, power is dispersed, and human dignity is upheld.
+
+## References
+
+Sandel, Michael J. The Tyranny of Merit: What’s Become of the Common Good? MacMillan Press, 2020.
+
+Shklar, Judith. “The Liberalism of Fear.” In Liberalism and the Moral Life. Ed. Nancy Rosenblum. Harvard University Press, 1989.
+---
+
+{% if page.tags %}
+<div class="tag-row">
+  {% for tag in page.tags %}
+    <a class="tag-chip" href="{{ '/topics/' | relative_url }}#{{ tag | slugify }}">#{{ tag }}</a>
+  {% endfor %}
+</div>
+{% endif %}
