@@ -1,0 +1,3 @@
+![Alt text describing the photo]({{ '/assets/images/your-photo.jpg' | relative_url }})
+
+
