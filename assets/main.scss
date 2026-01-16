@@ -290,3 +290,61 @@ figcaption {
     padding-right: 1rem;
   }
 }
+
+
+
+.featured-card {
+  display: grid;
+  grid-template-columns: 1.1fr 1.4fr;
+  gap: 1.25rem;
+  padding: 1.2rem 0;
+  border-bottom: 1px solid var(--line);
+  margin-bottom: 1.25rem;
+}
+
+.featured-img {
+  width: 100%;
+  border-radius: 10px;
+  display: block;
+}
+
+.featured-kicker {
+  font-family: "Inter", system-ui, sans-serif;
+  font-size: 0.85rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.featured-title a {
+  color: var(--ink);
+  text-decoration: none;
+}
+
+.featured-title a:hover {
+  text-decoration: underline;
+  text-decoration-color: var(--china-red);
+}
+
+.featured-date {
+  font-family: "Inter", system-ui, sans-serif;
+  font-size: 0.9rem;
+  color: var(--muted);
+  margin: 0.35rem 0 0.75rem 0;
+}
+
+.featured-excerpt {
+  margin: 0 0 0.75rem 0;
+}
+
+.featured-link {
+  font-family: "Inter", system-ui, sans-serif;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+@media (max-width: 700px) {
+  .featured-card {
+    grid-template-columns: 1fr;
+  }
+}
