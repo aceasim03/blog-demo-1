@@ -460,3 +460,22 @@ figcaption {
     padding-right: 1rem;
   }
 }
+
+
+.front-item-meta {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.front-item-pill {
+  font-family: "Inter", system-ui, sans-serif;
+  font-size: 0.75rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--china-red);
+  border: 1px solid rgba(185, 28, 28, 0.25);
+  background: rgba(185, 28, 28, 0.06);
+  padding: 0.12rem 0.45rem;
+  border-radius: 999px;
+}
