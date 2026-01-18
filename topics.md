@@ -3,9 +3,6 @@ layout: page
 title: Topics
 permalink: /topics/
 ---
-
-# Topics
-
 Click on a topic to jump to all posts that use that tag.
 
 <ul>
