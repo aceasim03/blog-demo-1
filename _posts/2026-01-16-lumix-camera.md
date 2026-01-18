@@ -3,9 +3,10 @@ layout: post
 title: "A Love Letter to My Lumix Camera"
 date: 2026-01-16
 tags: [Art, Travel, Reflection]
+image: assets/images/C6FF8F1C-246A-475C-98FE-A0A35ABC3243_1_102_o.jpeg
+image_caption: "A picture of my camera taken by an a photographer who stumbled across it | Suzhou, 3.2024"
 ---
 ![Picture of my camera]({{ 'assets/images/C6FF8F1C-246A-475C-98FE-A0A35ABC3243_1_102_o.jpeg' | relative_url }})
-
 
 Today is my birthday. That makes it time for a reflection. In my reflection, I went through some old photos from years past and wanted to share the increasingly emotional attachment I have with my father’s, and now my, camera – the Lumix Panasonic GF2. 
 
