@@ -544,3 +544,27 @@ figcaption {
     grid-template-columns: 1fr;
   }
 }
+
+
+
+/* ===== Featured image: cover-style treatment ===== */
+.featured-media {
+  margin: 0;
+}
+
+.featured-img {
+  width: 100%;
+  display: block;
+  border-radius: 12px;
+  border: 1px solid rgba(185, 28, 28, 0.35); /* thin China-red border */
+  box-shadow: 0 14px 40px rgba(15, 23, 42, 0.10);
+}
+
+.featured-caption {
+  margin-top: 0.55rem;
+  font-family: "Inter", system-ui, sans-serif;
+  font-size: 0.88rem;
+  line-height: 1.5;
+  color: var(--muted);
+  padding-left: 0.15rem;
+}
