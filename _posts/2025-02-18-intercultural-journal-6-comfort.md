@@ -2,7 +2,7 @@
 layout: post
 title: "Intercultural Journal #6 | Comfort"
 date: 2025-02-18
-tags: [Travel, Reflection, Culture]
+tags: [Reflection, Culture, Travel]
 ---
 
 I was in Shanghai the other day and was just people-watching. I was observing Chinese people of all demographics, and they all seemed comfortable. I relate this experience to my time in Japan to say that many people of all demographics were also comfortable. What I mean by being “comfortable” is being a part of the system and society without much hesitation – things are easy. You’ll see that there are interviews out there asking those native to Japan and China whether they’d like to leave their country and move to somewhere like the US. I find those interviews interesting because a response I’ve noted and witnessed in real life is that while they express a desire to move to another country, they are very comfortable. They are tethered to their home country by the level of comfort they feel and the discomfort they anticipate when going somewhere else.
