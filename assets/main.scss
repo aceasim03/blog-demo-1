@@ -854,3 +854,10 @@ figcaption {
 @media (max-width: 600px) {
   .pin { width: 30px; height: 30px; }
 }
+
+
+.map-credit {
+  margin-top: 1rem;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
