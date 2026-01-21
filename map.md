@@ -67,3 +67,11 @@ permalink: /map/
     });
   });
 </script>
+
+
+
+
+<p class="map-credit">
+  Map graphic: <a href="https://mapsvg.com/maps/world" target="_blank" rel="noopener">Creator Name</a>,
+  licensed under <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener">CC BY 4.0</a>.
+</p>
