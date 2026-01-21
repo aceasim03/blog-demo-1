@@ -686,3 +686,65 @@ figcaption {
   text-decoration-color: var(--china-red);
   text-underline-offset: 3px;
 }
+
+
+/* ===== After section (no extra posts, just atmosphere + links) ===== */
+.after-strip {
+  margin-top: 2.2rem;
+  padding-top: 1.6rem;
+  border-top: 1px solid var(--line);
+}
+
+.after-kicker {
+  font-family: "Inter", system-ui, sans-serif;
+  font-size: 0.78rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 0.65rem;
+}
+
+.after-text {
+  margin: 0 0 1.1rem 0;
+  color: var(--muted);
+}
+
+.after-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.9rem;
+}
+
+.after-card {
+  display: block;
+  text-decoration: none !important;
+  border: 1px solid rgba(15, 23, 42, 0.10);
+  background: #fff;
+  border-radius: 14px;
+  padding: 1rem 1rem 0.95rem 1rem;
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.06);
+}
+
+.after-card:hover {
+  border-color: rgba(185, 28, 28, 0.30);
+  background: rgba(185, 28, 28, 0.04);
+}
+
+.after-title {
+  font-family: "Inter", system-ui, sans-serif;
+  font-weight: 800;
+  color: var(--ink);
+}
+
+.after-sub {
+  margin-top: 0.35rem;
+  color: var(--muted);
+  font-family: "Inter", system-ui, sans-serif;
+  font-size: 0.92rem;
+}
+
+@media (max-width: 800px) {
+  .after-grid {
+    grid-template-columns: 1fr;
+  }
+}
