@@ -4,56 +4,66 @@ title: Map
 permalink: /map/
 ---
 
-<link
-  rel="stylesheet"
-  href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
-/>
-<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<p class="map-intro">
+  A small atlas of where these notes were written.
+</p>
 
-<div id="post-map" style="height: 520px; border-radius: 12px; border: 1px solid rgba(0,0,0,0.08);"></div>
+<div class="flatmap">
+  <img class="flatmap-base" src="{{ '/assets/world.svg' | relative_url }}" alt="World map">
+
+  <!-- Dots: positioned by percent (responsive) -->
+  <button class="pin pin-nj" data-place="New Jersey">NJ</button>
+  <button class="pin pin-bj" data-place="Beijing">BJ</button>
+  <button class="pin pin-sh" data-place="Shanghai">SH</button>
+  <button class="pin pin-tk" data-place="Takasaki">TK</button>
+</div>
+
+<div id="place-panel" class="place-panel" aria-live="polite">
+  <div class="place-title">Click a dot</div>
+  <div class="place-sub">New Jersey · Beijing · Shanghai · Takasaki</div>
+</div>
 
 <script>
-  // Build an array of posts that have lat/lng
+  // Build a location index from your posts
   const posts = [
     {% for post in site.posts %}
-      {% if post.lat and post.lng %}
-        {
-          title: {{ post.title | jsonify }},
-          url: {{ post.url | relative_url | jsonify }},
-          where: {{ post.where | default: "" | jsonify }},
-          date: {{ post.date | date: "%Y-%m-%d" | jsonify }},
-          lat: {{ post.lat }},
-          lng: {{ post.lng }}
-        },
-      {% endif %}
+      {
+        title: {{ post.title | jsonify }},
+        url: {{ post.url | relative_url | jsonify }},
+        date: {{ post.date | date: "%Y-%m-%d" | jsonify }},
+        where: {{ post.where | default: "" | jsonify }}
+      },
     {% endfor %}
   ];
 
-  // Init map
-  const map = L.map("post-map", { scrollWheelZoom: false }).setView([25, 10], 2);
-
-L.tileLayer("https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png", {
-  maxZoom: 19,
-  attribution: '&copy; OpenStreetMap contributors &copy; CARTO'
-}).addTo(map);
-
-  // Add markers
-  const bounds = [];
-  posts.forEach(p => {
-    const marker = L.marker([p.lat, p.lng]).addTo(map);
-    marker.bindPopup(`
-      <div style="font-family: system-ui; line-height: 1.4;">
-        <div style="font-weight: 700; margin-bottom: 4px;">
-          <a href="${p.url}">${p.title}</a>
-        </div>
-        <div style="opacity: 0.85;">${p.date}${p.where ? " · " + p.where : ""}</div>
-      </div>
-    `);
-    bounds.push([p.lat, p.lng]);
-  });
-
-  // Fit map to markers (if we have any)
-  if (bounds.length > 0) {
-    map.fitBounds(bounds, { padding: [30, 30] });
+  function postsFor(place) {
+    const p = place.toLowerCase();
+    return posts.filter(x => (x.where || "").toLowerCase().includes(p));
   }
+
+  const panel = document.getElementById("place-panel");
+
+  document.querySelectorAll(".pin").forEach(btn => {
+    btn.addEventListener("click", () => {
+      const place = btn.dataset.place;
+      const list = postsFor(place);
+
+      const items = list.length
+        ? `<ul class="place-list">
+            ${list.map(p => `
+              <li>
+                <a href="${p.url}">${p.title}</a>
+                <span class="place-date">${p.date}</span>
+              </li>
+            `).join("")}
+          </ul>`
+        : `<div class="place-empty">No posts tagged with this location yet.</div>`;
+
+      panel.innerHTML = `
+        <div class="place-title">${place}</div>
+        <div class="place-sub">${list.length} post${list.length === 1 ? "" : "s"}</div>
+        ${items}
+      `;
+    });
+  });
 </script>
