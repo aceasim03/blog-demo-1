@@ -4,12 +4,50 @@ title: Map
 permalink: /map/
 ---
 
-<p class="map-intro">A small atlas of where these notes were written.</p>
+<p class="map-intro">
+  A small atlas of where these notes were written.
+</p>
 
-<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+<div class="map-shell">
+  <div id="post-map"></div>
+
+  <div class="map-legend">
+    <span class="map-legend-dot"></span>
+    <span class="map-legend-text">
+      Dots mark where each fragment was written.
+    </span>
+  </div>
+</div>
+
+<div class="map-list-intro">
+  Recent fragments on the map
+</div>
+
+<ul class="map-list">
+  {% for post in site.posts limit: 8 %}
+    {% if post.lat and post.lng %}
+      <li class="map-list-item">
+        <div class="map-list-meta">
+          <span class="map-list-date">
+            {{ post.date | date: "%B %d, %Y" }}
+          </span>
+          {% if post.where %}
+            <span class="map-list-where"> · {{ post.where }}</span>
+          {% endif %}
+        </div>
+        <a class="map-list-title" href="{{ post.url | relative_url }}">
+          {{ post.title }}
+        </a>
+      </li>
+    {% endif %}
+  {% endfor %}
+</ul>
+
+<link
+  rel="stylesheet"
+  href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+/>
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-
-<div id="post-map"></div>
 
 <script>
   const posts = [
@@ -35,27 +73,24 @@ permalink: /map/
     attributionControl: false
   }).setView([25, 10], 2);
 
-  // Option 1: very light, almost flat basemap
-  L.tileLayer("https://{s}.basemaps.cartocdn.com/light_nolabels/{z}/{x}/{y}{r}.png", {
-    maxZoom: 10
-  }).addTo(map);
+  L.tileLayer(
+    "https://{s}.basemaps.cartocdn.com/light_nolabels/{z}/{x}/{y}{r}.png",
+    { maxZoom: 10 }
+  ).addTo(map);
 
-  // Minimalist red dot marker
   const dotIcon = L.divIcon({
     className: "post-dot",
-    iconSize: [10, 10]
+    iconSize: [14, 14]
   });
 
   const bounds = [];
   posts.forEach(p => {
     const m = L.marker([p.lat, p.lng], { icon: dotIcon }).addTo(map);
 
-    // click goes straight to the post
     m.on("click", () => {
       window.location.href = p.url;
     });
 
-    // optional: simple tooltip on hover
     m.bindTooltip(
       `${p.title}${p.where ? " · " + p.where : ""}`,
       { direction: "top", offset: [0, -8], opacity: 0.9 }
