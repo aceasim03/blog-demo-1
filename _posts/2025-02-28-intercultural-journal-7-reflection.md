@@ -13,13 +13,16 @@ I think that because this is the last journal for the class, I should reflect on
 Let me start by listing some of the things I learned in this course:
 
 
-### I. Something is better than nothing, everything is a process
+<div class="overview">
+  <div class="overview-kicker">In this piece</div>
+  <ul class="overview-list">
+    <li><a href="#something-is-better-than-nothing">I. Something is better than nothing, everything is a process</a></li>
+    <li><a href="#always-have-a-smile-on-your-face">II. Always have a smile on your face</a></li>
+    <li><a href="#get-through-the-tough-stuff">III. Get through the tough stuff, it’s the only way to grow</a></li>
+    <li><a href="#keep-pondering-and-reflecting">IV. Keep pondering and reflecting</a></li>
+  </ul>
+</div>
 
-### II. Always have a smile on your face
-
-### III. Get through the tough stuff, it’s the only way to grow
-
-### IV. Keep pondering and reflecting
 
 Of course, I learned some awesome things about Suzhou, design-thinking, and intercultural communication, but I would like to say that I truly learned these things outside of the class on my trip to Suzhou to film this video.
 
