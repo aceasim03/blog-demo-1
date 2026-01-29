@@ -2,6 +2,9 @@
 layout: post
 title: "Intercultural Journal #7 | Reflection"
 date: 2025-02-28
+where: "Suzhou, China"
+lat: 31.2983
+lng: 120.5832
 tags: [Reflection, Culture, Travel]
 ---
 
