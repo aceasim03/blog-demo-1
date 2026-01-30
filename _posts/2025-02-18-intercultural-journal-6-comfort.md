@@ -2,6 +2,9 @@
 layout: post
 title: "Intercultural Journal #6 | Comfort"
 date: 2025-02-18
+where: "Shanghai, China"
+lat: 31.2304
+lng: 121.4737
 tags: [Reflection, Culture, Travel]
 ---
 
