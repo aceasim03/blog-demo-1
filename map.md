@@ -52,18 +52,36 @@ permalink: /map/
 <script>
   const posts = [
     {% for post in site.posts %}
-      {% if post.lat and post.lng %}
+      {% if post.lat and post.lng and post.where %}
         {
           title: {{ post.title | jsonify }},
           url: {{ post.url | relative_url | jsonify }},
           date: {{ post.date | date: "%Y-%m-%d" | jsonify }},
-          where: {{ post.where | default: "" | jsonify }},
+          where: {{ post.where | jsonify }},
           lat: {{ post.lat }},
           lng: {{ post.lng }}
         },
       {% endif %}
     {% endfor %}
   ];
+
+  // Group by place name and keep the most recent post per place
+  const latestByPlaceMap = new Map();
+
+  posts.forEach(p => {
+    const key = p.where || "Somewhere";
+    const existing = latestByPlaceMap.get(key);
+    if (!existing) {
+      latestByPlaceMap.set(key, p);
+    } else {
+      // compare ISO dates as strings
+      if (p.date > existing.date) {
+        latestByPlaceMap.set(key, p);
+      }
+    }
+  });
+
+  const latestByPlace = Array.from(latestByPlaceMap.values());
 
   const map = L.map("post-map", {
     zoomControl: false,
@@ -84,7 +102,7 @@ permalink: /map/
   });
 
   const bounds = [];
-  posts.forEach(p => {
+  latestByPlace.forEach(p => {
     const m = L.marker([p.lat, p.lng], { icon: dotIcon }).addTo(map);
 
     m.on("click", () => {
@@ -92,7 +110,7 @@ permalink: /map/
     });
 
     m.bindTooltip(
-      `${p.title}${p.where ? " · " + p.where : ""}`,
+      `${p.where}: ${p.title}`,
       { direction: "top", offset: [0, -8], opacity: 0.9 }
     );
 
@@ -102,4 +120,30 @@ permalink: /map/
   if (bounds.length) {
     map.fitBounds(bounds, { padding: [30, 30] });
   }
+
+  // Build the “Recent fragments on the map” list from latestByPlace
+  document.addEventListener("DOMContentLoaded", () => {
+    const listEl = document.querySelector(".map-list");
+    if (!listEl) return;
+
+    // Sort by date descending
+    const sorted = [...latestByPlace].sort((a, b) => (a.date < b.date ? 1 : -1));
+
+    listEl.innerHTML = "";
+    sorted.forEach(p => {
+      const li = document.createElement("li");
+      li.className = "map-list-item";
+      li.innerHTML = `
+        <div class="map-list-meta">
+          <span class="map-list-date">${p.date}</span>
+          <span class="map-list-where"> · ${p.where}</span>
+        </div>
+        <a class="map-list-title" href="${p.url}">
+          ${p.title}
+        </a>
+      `;
+      listEl.appendChild(li);
+    });
+  });
 </script>
+
