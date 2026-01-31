@@ -2,6 +2,9 @@
 layout: post
 title: "VIRTUE-CENTERED THEORY VS. ACTION-CENTERED THEORIES: WHICH ETHICS SHOULD AI FOLLOW"
 date: 2023-03-26
+where: "Takasaki, Japan"
+lat: 36.3221
+lng: 139.0034
 tags: [AI Ethics, Philosophy]
 ---
 
