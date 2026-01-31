@@ -2,6 +2,9 @@
 layout: post
 title: "THE “RING OF GYGES” AND THE ETHICS OF AI: WHY SELF-INTEREST SHOULD NOT TRUMP MORALITY"
 date: 2023-03-18
+where: "Takasaki, Japan"
+lat: 36.3221
+lng: 139.0034
 tags: [AI Ethics, Philosophy]
 ---
 
